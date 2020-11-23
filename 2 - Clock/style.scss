@@ -1,5 +1,3 @@
-//figure out how to change lenght of hands
-
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap');
 
 html {
@@ -36,12 +34,22 @@ body {
   .hand {
     width: 50%;
     position: absolute;
-    height: 6px;
+    height: 4px;
     background-color: #8e9aaf;
     top: 50%;
     transform-origin: 100%;
     transform: rotate(90deg);
     transition: all 0.05s;
     transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+  }
+  .minute-hand {
+    width: 45%;
+    left: 5%;
+    height: 6px;
+  }
+  .hour-hand {
+    width: 30%;
+    left: 20%;
+    height: 10px;
   }
 }

@@ -43,7 +43,7 @@ body {
 .clock .hand {
   width: 50%;
   position: absolute;
-  height: 6px;
+  height: 4px;
   background-color: #8e9aaf;
   top: 50%;
   -webkit-transform-origin: 100%;
@@ -54,5 +54,17 @@ body {
   transition: all 0.05s;
   -webkit-transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
           transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
+
+.clock .minute-hand {
+  width: 45%;
+  left: 5%;
+  height: 6px;
+}
+
+.clock .hour-hand {
+  width: 30%;
+  left: 20%;
+  height: 10px;
 }
 /*# sourceMappingURL=style.css.map */
