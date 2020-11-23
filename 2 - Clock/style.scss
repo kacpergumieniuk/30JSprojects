@@ -1,0 +1,47 @@
+//figure out how to change lenght of hands
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap');
+
+html {
+  background-color: #feeafa;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 10px;
+  text-align: center;
+}
+
+body {
+  font-size: 2rem;
+  margin: 0;
+  min-height: 100vh;
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.clock {
+  margin: 50px auto;
+  width: 30rem;
+  height: 30rem;
+  border: 20px solid #cbc0d3;
+  border-radius: 50%;
+  padding: 2rem;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+  .clock-face {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-3px);
+  }
+  .hand {
+    width: 50%;
+    position: absolute;
+    height: 6px;
+    background-color: #8e9aaf;
+    top: 50%;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition: all 0.05s;
+    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+  }
+}
